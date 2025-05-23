@@ -31,10 +31,6 @@ client.on('voiceStateUpdate', async (oldState, newState) => {
               PermissionsBitField.Flags.Speak,
               PermissionsBitField.Flags.ViewChannel
             ]
-          },
-          {
-            id: guild.roles.everyone,
-            deny: [PermissionsBitField.Flags.Connect]
           }
         ]
       })
